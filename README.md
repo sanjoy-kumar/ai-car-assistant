@@ -1,8 +1,5 @@
 ## AI Car Assistant
 
-An AI-powered application that helps drivers diagnose car problems and estimate repair costs.
-
-
 
 <div align="left">
   <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python Version" />
@@ -13,6 +10,8 @@ An AI-powered application that helps drivers diagnose car problems and estimate 
   <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge" alt="License" />
 </div>
 
+
+An AI-powered application that helps drivers diagnose car problems and estimate repair costs.
 
 ## 🚀 Features
 - **Intelligent Diagnostics**: Natural language processing to diagnose car symptoms.
