@@ -6,6 +6,7 @@ An AI-powered application that helps drivers diagnose car problems and estimate 
 - Ask AI about car problems
 - Personalized responses using car profile
 - Knowledge base retrieval (RAG architecture)
+- Use radis for Faster responses & Lower AI cost (caching)
 - Maintenance tracking
 
 ### Add Car Profile Feature
@@ -191,6 +192,11 @@ The system runs as:
 
 ### 🖥️ Example Interaction
 
+![Optional Alt Text](images/1.png)
+
+![Optional Alt Text](images/2.png)
+
+![Optional Alt Text](images/3.png)
 
 
 ### 🤝 Contributing
