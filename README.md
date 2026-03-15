@@ -1,186 +1,76 @@
+
+```html
+<div align="left">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python Version" />
+  <img src="https://img.shields.io/badge/FastAPI-0.100+-green?style=for-the-badge&logo=fastapi" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/PostgreSQL-18-blue?style=for-the-badge&logo=postgresql" alt="Postgres" />
+  <img src="https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge&logo=docker" alt="Docker" />
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge" alt="License" />
+</div>
+```
+
+
 ## AI Car Assistant
 
 An AI-powered application that helps drivers diagnose car problems and estimate repair costs.
 
-### Features
-- Ask AI about car problems
-- Personalized responses using car profile
-- Knowledge base retrieval (RAG architecture)
-- Use radis for Faster responses & Lower AI cost (caching)
-- Maintenance tracking
-
-### Add Car Profile Feature
-
-Users should input:
-
-- Car make
-- Model
-- Year
-- Mileage
-
-Then the AI response becomes personalized.
-
-### Tech Stack
-
-#### 1. Frontend
-- React
-- TypeScript
-- Axios
-- JWT auth
-
-#### 2. Backend
-- Python Flask
-- FastAPI
-
-#### 3. AI integration
-- OpenAI API
-
-#### 4. Vector Database
-- ChromaDB
-
-#### 5. Database
-- SQLite
-- PostgreSQL
-
-#### 6. Caching
-- radis
-
-#### 7. DevOps
-- Docker
-- Docker Compose
+### 🚀 Features
+- **Intelligent Diagnostics**: Natural language processing to diagnose car symptoms.
+- **Personalized Insights**: Tailored responses based on your car's make, model, year, and mileage.
+- **RAG Architecture**: Knowledge retrieval for accurate, context-aware advice.
+- **High-Performance Caching**: Redis integration to reduce latency and optimize AI API costs.
+- **Maintenance Tracking**: Keep a history of your vehicle's service records.
 
 
-### Project Architecture
-
-The project looks like this:
+### 🏗️ Project Architecture
+The system follows a microservices approach, utilizing Docker to manage containerized components.
 
 ```text
-ai-car-assistant
-|
-backend
-|-- app
-|    |-- main.py
-|    |-- database.py
-|    |-- models.py
-|    |-- schemas.py
-|    |-- auth.py
-|    |-- routers
-|          |-- cars.py
-|          |-- maintenance.py
-|          |-- ai.py
-|
-|-- requirements.txt
-|-- Dockerfile
-|
-frontend
-|-- src
-|    |
-|    api
-|    |-- api.ts
-|    |
-|    components
-|    |-- CarForm.tsx
-|    |-- AskAI.tsx
-|    |-- AnswerBox.tsx
-|    |
-|    types
-|    |-- car.ts
-|    |
-|    App.tsx
-|    main.tsx
-|    App.css
-|-- Dockerfile
-|
-docker-compose.yml
-|
-README.md
+ai-car-assistant/
+├── backend/          # FastAPI application & business logic
+├── frontend/         # React + TypeScript SPA
+└── images/           # Documentation assets
+└── scripts/ 
+├── docker-compose.yml # Orchestration of containers
+└── README.md
 ```
 
-### ⚙️ Installation (Run the System)
 
-#### 0. Clone the Repository
+### 🛠️ Tech Stack
+- **Frontend**: React, TypeScript, Axios, JWT Authentication
+- **Backend**: Python, FastAPI
+- **AI Engine**: OpenAI API with RAG (Retrieval-Augmented Generation)
+- **Database**: PostgreSQL, SQLite
+- **Caching**: Redis
+- **DevOps**: Docker, Docker Compose
+
+### 🚀 Getting Started
+
+#### Prerequisites
+- Docker Desktop installed
+- Node.js (v20+) and Python (v3.11+)
+
+#### Installation
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/sanjoy-kumar/ai-car-assistant.git
 cd ai-car-assistant
 ```
 
-#### 1. Backend:
+2. Configure Environment Variables:
 
-```bash
-cd backend
-```
+Create a **.env** file in both **/backend** and **/frontend** directories using the provided templates in the source code.
 
-Create .env file:
-
-```bash
-backend/.env
-```
-
-Insert the following lines in the .env file:
-
-```text
-OPENAI_API_KEY=your_openai_api_key_here
-SECRET_KEY = "supersecret"
-ALGORITHM = "HS256"
-REDIS_PORT=6379
-
-## --- For Docker Testing (docker-compose up): ----
-#DATABASE_URL=postgresql://postgres:password@db:5432/cars
-#REDIS_HOST=host.docker.internal
-
-## ---- For Local Testing (Outside Docker): -----
-DATABASE_URL=postgresql://postgres:password@localhost:5432/cars
-REDIS_HOST=localhost
-```
-
-```bash
-pip install -r requirements.txt
-python knowledge.py
-python main.py
-```
-
-#### 2. Frontend:
-
-```bash
-cd frontend
-```
-
-Create .env file:
-
-```bash
-frontend/.env
-```
-Insert the following lines in the .env file:
-
-```text
-## For Local machine or development
-VITE_API_URL=http://localhost:8000
-## For docker's container
-#VITE_API_URL=http://backend:8000
-## For Production Server or VM
-#VITE_API_URL=https://api.yourdomain.com
-```
-
-```bash
-npm install
-npm install axios react-markdown
-npm start
-```
-
-Open:
-
-http://localhost:3000
-
-
-### Run Everything for Docker
-
-From root project:
+3. Launch the System:
+To run the entire stack using Docker Compose:
 
 ```bash
 docker-compose up --build
 ```
-The system runs as:
+### 🌐 Service Access
 
 | Service | URL |
 | :--- | :--- |
@@ -190,7 +80,7 @@ The system runs as:
 | Database | localhost:5432 |
 
 
-### 🖥️ Example Interaction
+### 📸 System Overview
 
 ![Optional Alt Text](images/1.png)
 
@@ -203,36 +93,19 @@ The system runs as:
 
 Contributions are welcome!
 
-#### Steps
-
-1. Fork the repository
-2. Create a branch
-
-```bash
-git checkout -b feature/new-feature
-```
-
-3. Commit changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push
-
-```bash
-git push origin feature/new-feature
-```
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
 ### 🛡️ License
 
-This project is licensed under the MIT License.
+Distributed under the MIT License. See LICENSE for more information.
 
 ### 👨‍💻 Author
 
-Developed by Sanjoy Kumar
+Sanjoy Kumar Das|  [GitHub](https://github.com/sanjoy-kumar)
 
-GitHub:
-https://github.com/sanjoy-kumar
+
 
