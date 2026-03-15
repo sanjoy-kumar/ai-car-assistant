@@ -179,30 +179,14 @@ From root project:
 ```bash
 docker-compose up --build
 ```
-
-Now we have:
-
-1. Backend
-
-http://localhost:8000
-
-2. API docs
-
-http://localhost:8000/docs
-
-3. Frontend (React)
-
-http://localhost:3000
-
-
 The system runs as:
 
 | Service | URL |
 | :--- | :--- |
-| **Frontend** | http://localhost:3000 |
-| **Backend** | http://localhost:8000 |
-| **API Docs** | http://localhost:8000/docs |
-| **Database** | localhost:5432 |
+| Frontend | http://localhost:3000 |
+| Backend | http://localhost:8000 |
+| API Docs | http://localhost:8000/docs |
+| Database | localhost:5432 |
 
 
 ### 🖥️ Example Interaction
