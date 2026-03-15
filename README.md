@@ -1,5 +1,9 @@
+## AI Car Assistant
 
-```html
+An AI-powered application that helps drivers diagnose car problems and estimate repair costs.
+
+
+
 <div align="left">
   <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python Version" />
   <img src="https://img.shields.io/badge/FastAPI-0.100+-green?style=for-the-badge&logo=fastapi" alt="FastAPI" />
@@ -8,14 +12,9 @@
   <img src="https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge&logo=docker" alt="Docker" />
   <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge" alt="License" />
 </div>
-```
 
 
-## AI Car Assistant
-
-An AI-powered application that helps drivers diagnose car problems and estimate repair costs.
-
-### 🚀 Features
+## 🚀 Features
 - **Intelligent Diagnostics**: Natural language processing to diagnose car symptoms.
 - **Personalized Insights**: Tailored responses based on your car's make, model, year, and mileage.
 - **RAG Architecture**: Knowledge retrieval for accurate, context-aware advice.
@@ -23,7 +22,7 @@ An AI-powered application that helps drivers diagnose car problems and estimate 
 - **Maintenance Tracking**: Keep a history of your vehicle's service records.
 
 
-### 🏗️ Project Architecture
+## 🏗️ Project Architecture
 The system follows a microservices approach, utilizing Docker to manage containerized components.
 
 ```text
@@ -37,7 +36,7 @@ ai-car-assistant/
 ```
 
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 - **Frontend**: React, TypeScript, Axios, JWT Authentication
 - **Backend**: Python, FastAPI
 - **AI Engine**: OpenAI API with RAG (Retrieval-Augmented Generation)
@@ -45,7 +44,7 @@ ai-car-assistant/
 - **Caching**: Redis
 - **DevOps**: Docker, Docker Compose
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 
 #### Prerequisites
 - Docker Desktop installed
@@ -62,7 +61,7 @@ cd ai-car-assistant
 
 2. Configure Environment Variables:
 
-Create a **.env** file in both **/backend** and **/frontend** directories using the provided templates in the source code.
+    Create a **.env** file in both **/backend** and **/frontend** directories using the provided templates in the source code.
 
 3. Launch the System:
 To run the entire stack using Docker Compose:
@@ -70,7 +69,7 @@ To run the entire stack using Docker Compose:
 ```bash
 docker-compose up --build
 ```
-### 🌐 Service Access
+## 🌐 Service Access
 
 | Service | URL |
 | :--- | :--- |
@@ -80,7 +79,7 @@ docker-compose up --build
 | Database | localhost:5432 |
 
 
-### 📸 System Overview
+## 📸 System Overview
 
 ![Optional Alt Text](images/1.png)
 
@@ -89,7 +88,7 @@ docker-compose up --build
 ![Optional Alt Text](images/3.png)
 
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -99,13 +98,13 @@ Contributions are welcome!
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
-### 🛡️ License
+## 🛡️ License
 
 Distributed under the MIT License. See LICENSE for more information.
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
-Sanjoy Kumar Das|  [GitHub](https://github.com/sanjoy-kumar)
+Sanjoy Kumar Das |  [GitHub](https://github.com/sanjoy-kumar)
 
 
 
