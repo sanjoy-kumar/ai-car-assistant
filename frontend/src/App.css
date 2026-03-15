@@ -1,0 +1,82 @@
+.container{
+width:600px;
+margin:auto;
+text-align:center;
+font-family:Arial;
+}
+
+pre {
+  white-space: pre-wrap;       /* Allows text to wrap */
+  word-wrap: break-word;       /* Breaks long words if necessary */
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;            /* Keeps mechanic advice readable */
+}
+
+/* Add this to your App.css */
+.car-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Spinner Animation */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #007bff; /* Matches your button color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loader-container {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Question Input styling */
+.question-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Answer box styling to prevent "out of the box" issues */
+.answer-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 5px solid #007bff;
+  text-align: left;
+  line-height: 1.6;
+}
+
+
